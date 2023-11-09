@@ -25,6 +25,12 @@ class _CurrencyConverterMaterialPageState
     });
   }
 
+//dispose off controllers to reduce memory leakage
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     //border
